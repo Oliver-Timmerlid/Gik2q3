@@ -13,7 +13,7 @@ public class ApiJavaOne {
         Configuration conf = new Configuration();
         conf.set("fs.defaultFS", "hdfs://sandbox-hdp.hortonworks.com:8020/");  
  
-        String hdfsPath = "/user/maria_dev";
+        String hdfsPath = "/tmp/mr";
         
         FileSystem fs = FileSystem.get(conf);
         Path path = new Path(hdfsPath);
